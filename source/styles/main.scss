@@ -3,7 +3,7 @@ $color-circle-center-1: #FFC12D;
 $color-circle-border-1: #F9B718;
 $color-1: #A47503;
 $color-title: #2C3E50;
-$color-text: #A1B1BC;
+$color-text: #2C3E50;
 $color-exit: #CFD2D3;
 $color-2: #558502;
 $color-circle-center-2: #97E411;
@@ -18,6 +18,7 @@ $color-5: #5B568E;
 $color-circle-center-5: #A39CDC;
 $color-circle-border-5: #8781BD;
 $circle-diameter: 50px;
+
 
 body{
     width: 1150px;
@@ -43,7 +44,6 @@ body{
         justify-content: center;
         align-items: center;
         margin: 43px  28px 43px 50px;
-
     }
 
     div{
@@ -59,6 +59,7 @@ body{
             font-family: 'Lato', sans-serif;
             margin-right: 82px;
             font-size: 14px;
+            line-height: 24px;
         }
     }
     a{
@@ -92,7 +93,9 @@ body{
 
 
 .row1{
+    
     .column1{
+        background-color: $color-circle-center-1;
         &::before{
             content: '\f12a';
             color: $color-1;
@@ -101,6 +104,7 @@ body{
         }
     }
     .column2{
+        background-color: $color-circle-center-2;
         &::before{
             content: '\f00c';
             color: $color-2;
@@ -112,6 +116,7 @@ body{
 }
 .row2{
     .column1{
+        background-color: $color-circle-center-3;
         &::before{
             content: '\f00d';
             color: $color-3;
@@ -120,6 +125,7 @@ body{
         }
     }
     .column2{
+        background-color: $color-circle-center-4;
         &::before{
             content: '\f0e7';
             color: $color-4;
@@ -131,6 +137,7 @@ body{
 }
 
 .fullrow{
+    background-color: $color-circle-center-5;
     &::before{
         content: '\f129';
         color: $color-5;
