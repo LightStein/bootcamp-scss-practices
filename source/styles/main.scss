@@ -1,11 +1,28 @@
 $color-container-border: #E2E6E7;
-$color-circle-center: #FFC12D;
-$color-circle-border: #F9B718;
-$color-exclamation: #A47503;
+$color-circle-center-1: #FFC12D;
+$color-circle-border-1: #F9B718;
+$color-1: #A47503;
 $color-title: #2C3E50;
 $color-text: #A1B1BC;
 $color-exit: #CFD2D3;
+$color-2: #558502;
+$color-circle-center-2: #97E411;
+$color-circle-border-2: #7BC200;
+$color-3: #D52E13;
+$color-circle-center-3: #FD7761;
+$color-circle-border-3: #F55C43;
+$color-4: #0787D4;
+$color-circle-center-4: #6FD9FC;
+$color-circle-border-4: #47B4F6;
+$color-5: #5B568E;
+$color-circle-center-5: #A39CDC;
+$color-circle-border-5: #8781BD;
+$circle-diameter: 50px;
 
+body{
+    width: 1150px;
+
+}
 
 .message{
     border: solid $color-container-border 1px;
@@ -14,17 +31,14 @@ $color-exit: #CFD2D3;
     align-items: center;
     border-radius: 8px;
     position: relative;
+    margin-bottom: 30px;
 
     &::before{
         font-size: 24px;
-        color: $color-exclamation;
-        content: '\f12a';
         display: inline-flex;
         font-family: 'FontAwesome';
-        background-color: $color-circle-center;
-        width: 50px;
-        height: 50px;
-        border: solid $color-circle-border 7px;
+        width: $circle-diameter;
+        height: $circle-diameter;
         border-radius: 50%;
         justify-content: center;
         align-items: center;
@@ -57,5 +71,70 @@ $color-exit: #CFD2D3;
             font-family: "FontAwesome";
             display: inline-block;
         }
+    }
+}
+
+
+
+.fullrow{
+    p{
+        margin-right: 24px;
+    }
+}
+
+.row{
+    display: flex;
+    .column2{
+        margin-left: 30px;
+    }
+}
+
+
+
+.row1{
+    .column1{
+        &::before{
+            content: '\f12a';
+            color: $color-1;
+            background-color: $color-circle-center-1;
+            border: solid $color-circle-border-1 7px;
+        }
+    }
+    .column2{
+        &::before{
+            content: '\f00c';
+            color: $color-2;
+            background-color: $color-circle-center-2;
+            border: solid $color-circle-border-2 7px;
+        }
+    }
+
+}
+.row2{
+    .column1{
+        &::before{
+            content: '\f00d';
+            color: $color-3;
+            background-color: $color-circle-center-3;
+            border: solid $color-circle-border-3 7px;
+        }
+    }
+    .column2{
+        &::before{
+            content: '\f0e7';
+            color: $color-4;
+            background-color: $color-circle-center-4;
+            border: solid $color-circle-border-4 7px;
+        }
+    }
+
+}
+
+.fullrow{
+    &::before{
+        content: '\f129';
+        color: $color-5;
+        background-color: $color-circle-center-5;
+        border: solid $color-circle-border-5 7px;
     }
 }
