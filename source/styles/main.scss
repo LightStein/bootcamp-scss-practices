@@ -44,6 +44,7 @@ body{
         justify-content: center;
         align-items: center;
         margin: 43px  28px 43px 50px;
+        flex-shrink: 0;
     }
 
     div{
@@ -75,13 +76,8 @@ body{
     }
 }
 
+// 
 
-
-.fullrow{
-    p{
-        margin-right: 24px;
-    }
-}
 
 .row{
     display: flex;
@@ -89,7 +85,6 @@ body{
         margin-left: 30px;
     }
 }
-
 
 
 .row1{
@@ -112,8 +107,8 @@ body{
             border: solid $color-circle-border-2 7px;
         }
     }
-
 }
+
 .row2{
     .column1{
         background-color: $color-circle-center-3;
@@ -133,7 +128,6 @@ body{
             border: solid $color-circle-border-4 7px;
         }
     }
-
 }
 
 .fullrow{
@@ -143,5 +137,8 @@ body{
         color: $color-5;
         background-color: $color-circle-center-5;
         border: solid $color-circle-border-5 7px;
+    }
+    p{
+        margin-right: 24px;
     }
 }
