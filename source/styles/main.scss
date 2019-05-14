@@ -1,83 +1,13 @@
-$color-container-border: #E2E6E7;
-$color-circle-center-1: #FFC12D;
-$color-circle-border-1: #F9B718;
-$color-1: #A47503;
-$color-title: #2C3E50;
-$color-text: #2C3E50;
-$color-exit: #CFD2D3;
-$color-2: #558502;
-$color-circle-center-2: #97E411;
-$color-circle-border-2: #7BC200;
-$color-3: #D52E13;
-$color-circle-center-3: #FD7761;
-$color-circle-border-3: #F55C43;
-$color-4: #0787D4;
-$color-circle-center-4: #6FD9FC;
-$color-circle-border-4: #47B4F6;
-$color-5: #5B568E;
-$color-circle-center-5: #A39CDC;
-$color-circle-border-5: #8781BD;
-$circle-diameter: 50px;
+@import 'reset';
+@import 'base';
+@import 'palette';
 
-
-body{
-    width: 1150px;
-
-}
-
-.message{
-    border: solid $color-container-border 1px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    position: relative;
-    margin-bottom: 30px;
-
-    &::before{
-        font-size: 24px;
-        display: inline-flex;
-        font-family: 'FontAwesome';
-        width: $circle-diameter;
-        height: $circle-diameter;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        margin: 43px  28px 43px 50px;
-        flex-shrink: 0;
-    }
-
-    div{
-        h1{
-            color: $color-title;
-            font-size: 14px;
-            font-family: 'Lato', sans-serif;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-        }
-        p{
-            color: $color-text;
-            font-family: 'Lato', sans-serif;
-            margin-right: 82px;
-            font-size: 14px;
-            line-height: 24px;
-        }
-    }
-    a{
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        color: $color-exit;
-        &::before{
-            content: "\f00d";
-            font-family: "FontAwesome";
-            display: inline-block;
-        }
-    }
-}
+// Components
+@import 'componensts/notification/index';
 
 .row{
     display: flex;
+    
     .column2{
         margin-left: 30px;
     }
